@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Welcome to Box Model World</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <h2>Understanding the Box Model</h2>
+            <p>Every element in web design is a rectangular box. The CSS box model describes how these boxes are sized and spaced.</p>
+            <button class="learn-btn">Learn More</button>
+        </section>
+
+        <section class="card-section">
+            <article class="card">
+                <h3>Margin</h3>
+                <p>Creates space around elements, outside of any defined borders. Margins are transparent.</p>
+                <div class="margin-box">Margin example</div>
+            </article>
+
+            <article class="card">
+                <h3>Border</h3>
+                <p>A border that goes around the padding and content. You can style it in many ways.</p>
+                <div class="border-box">Border example</div>
+            </article>
+
+            <article class="card">
+                <h3>Padding</h3>
+                <p>Creates space around an element's content, inside of any defined borders.</p>
+                <div class="padding-box">Padding example</div>
+            </article>
+        </section>
+
+        <section class="content-section">
+            <h2>Putting It All Together</h2>
+            <p>When you set the width and height properties of an element with CSS, you are setting the content area dimensions. To get the total size, you must add padding, borders and margins.</p>
+            <div class="box-model-visual">
+                <div class="margin">
+                    <div class="border">
+                        <div class="padding">
+                            <div class="content">Content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Box Model Practice. All rights reserved.</p>
+    </footer>
+</body>
+</html>
